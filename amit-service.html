@@ -15,26 +15,29 @@
     <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toptop services</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
     <h1 class="head-name">Amit-Services Laptop & desktop service company</h1>
     <nav>
         <h1 class="head-logo1">AMIT <h2 class="head-logo">Services</h2>
         </h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Brands</a></li>
-            <li><a href="#">Repairs</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="ul1">
+            <ul>
+                <li><a href="#" style="color: rgb(35, 236, 135);">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Laptop Service in Chennai</a></li>
+                        <li><a href="#">Desktop Service Chennai</a></li>
+                        <li><a href="#">LED Tv Repair Service in Chennai</a></li>
+                        <li><a href="#">Chip Level Service Chennai</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Repairs</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
         <h1 class="head-logoc">Call Us</h1>
     </nav>
     <div class="dis">
@@ -45,7 +48,7 @@
             <button class="call-1">Call Now</button>
         </div>
         <div class="video-1">
-            sra
+            src
 
         </div>
     </div>
@@ -139,7 +142,7 @@
         <h1>Laptop Services</h1>
         <div class="card-box">
             <div class="img-lap-1">
-                <img src="/Images/chip service.jpg" alt=""  width="10px" height="20px" class="img-lap">
+                <img src="/Images/chip service.jpg" alt="" class="img-lap">
                 <p>Chip Level Service</p>
             </div>
             <div class="img-lap-1">
@@ -195,9 +198,7 @@
     </div>
     <!-- Tv brands -->
     <div class="tv-bra">
-       
         <h1>TV Brands We Service</h1>
-        
         <div class="brand">
             <div class="img-box"> <img src="./images/sony.jpeg" alt="" class="img-lap-2"></div>
             <div class="img-box"> <img src="./images/mi.jpeg" alt="" class="img-lap-2"></div>
@@ -206,7 +207,6 @@
             <div class="img-box"> <img src="./images/lg.jpeg" alt="" class="img-lap-2"></div>
             <div class="img-box"> <img src="./images/tcl.jpeg" alt="" class="img-lap-2"></div>
         </div>
-    
 
     </div>
     <!-- bus -->
@@ -215,18 +215,18 @@
             <div class="content-box1">
                 <h1>Businesses We Serve</h1>
                 <div class="lists-1" style="top: 120px;">
-                    <h2><i class="fa-solid fa-rocket" style="position: absolute; right: 140px;"></i> Start Ups</h2>
+                    <h2><i class="fa-solid fa-rocket"></i> Start Ups</h2>
                 </div>
                 <div class="lists-1" style="top: 140px;">
-                    <h2><i class="fa-solid fa-business-time" style="position: absolute; right: 220px;"></i> Small Business</h2>
+                    <h2><i class="fa-solid fa-business-time"></i> Small Business</h2>
                 </div>
                 <div class="lists-1" style="top: 170px;">
-                    <h2><i class="fa-solid fa-building-user" style="position: absolute; right: 170px;"></i> Enterprises</h2>
+                    <h2><i class="fa-solid fa-building-user"></i> Enterprises</h2>
                 </div>
             </div>
             <div class="content-box2">
                 <div class="content-video-20">
-                    <video src=""></video>
+                    <video src="/laptop.gif">play</video>
                 </div>
             </div>
         </div>
@@ -263,7 +263,7 @@
             </div>
 
 
-
+                                                                                                
             <div class="f3">
                 <h1>Online Support</h1><br><br>
                 <p>Software</p><br>
@@ -275,7 +275,7 @@
             <div class="box2">
                 <div><a><i class="fa-regular fa-copyright"></i> 2024 Amit-Services</a></div><br>
                 
-                <div class="SAR">
+                <div class="link">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
@@ -284,6 +284,13 @@
         </div>
     </section>
 
+    <script>
+        document.querySelector('.dropdown-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+            var dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 
 </html>
