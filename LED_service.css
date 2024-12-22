@@ -40,7 +40,7 @@ nav {
     top: 40px;
     /* justify-content: space-between;/ / Added to space out the logo and menu */
     align-items: center;
-    
+
 }
 
 .head-logo1 {
@@ -62,7 +62,7 @@ nav {
 }
 
 /* Navigation Menu */
-.ul1{
+.ul1 {
     margin-left: 150px;
 }
 
@@ -73,9 +73,10 @@ ul {
     text-decoration: none;
     list-style-type: none;
     justify-content: space-between;
-    
+
 
 }
+
 /* ul {
     list-style: none;
     margin: 0;
@@ -128,6 +129,8 @@ ul li a:hover {
     z-index: 1;
     padding: 10px 0;
     margin-right: 4000px;
+    margin-top: 5px;
+
 }
 
 .dropdown-content li {
@@ -145,6 +148,39 @@ ul li a:hover {
     display: block;
 }
 
+/* boobkabvhbvbb */
+.dropdown-content-1 {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 220px;
+    text-align: start;
+    z-index: 1;
+    padding: 10px 0;
+    margin-right: 4000px;
+    left: 221px;
+    top: 79px;
+    /* overflow:scroll; */
+    overflow-y: scroll;
+    height: 400px;
+
+}
+
+.dropdown-content-1 li {
+    padding: 25px 16px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.dropdown-content-1 li:hover {
+    background-color: #444;
+}
+
+/* Show the dropdown when the button is clicked */
+.dropdown-menu-1:hover .dropdown-content-1 {
+    display: block;
+}
+/* section-1 */
 h1,
 h2,
 h3 {

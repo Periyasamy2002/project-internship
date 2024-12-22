@@ -39,7 +39,7 @@ nav {
     top: 40px;
     /* justify-content: space-between;/ / Added to space out the logo and menu */
     align-items: center;
-    
+
 }
 
 .head-logo1 {
@@ -61,7 +61,7 @@ nav {
 }
 
 /* Navigation Menu */
-.ul1{
+.ul1 {
     margin-left: 150px;
 }
 
@@ -72,9 +72,10 @@ ul {
     text-decoration: none;
     list-style-type: none;
     justify-content: space-between;
-    
+
 
 }
+
 /* ul {
     list-style: none;
     margin: 0;
@@ -127,6 +128,8 @@ ul li a:hover {
     z-index: 1;
     padding: 10px 0;
     margin-right: 4000px;
+    margin-top: 5px;
+
 }
 
 .dropdown-content li {
@@ -143,6 +146,39 @@ ul li a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* boobkabvhbvbb */
+.dropdown-content-1 {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 220px;
+    text-align: start;
+    z-index: 1;
+    padding: 10px 0;
+    margin-right: 4000px;
+    left: 221px;
+    top: 79px;
+    /* overflow:scroll; */
+    overflow-y: scroll;
+    height: 400px;
+
+}
+
+.dropdown-content-1 li {
+    padding: 25px 16px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.dropdown-content-1 li:hover {
+    background-color: #444;
+}
+
+/* Show the dropdown when the button is clicked */
+.dropdown-menu-1:hover .dropdown-content-1 {
+    display: block;
+}
 /* display */
 .dis{
     display: flex;
@@ -152,7 +188,7 @@ ul li a:hover {
     /* background-color: chartreuse;#f98686 ,-90deg,*/
     background: linear-gradient(-90deg, #fff 45%, #49f69c 35% );
     color: #fff;
-    height: 650px;
+    height: 580px;
     top: 90px;
 }
 .text-content{
@@ -164,8 +200,8 @@ ul li a:hover {
     height: 500px;
     top: 200px;
     left: 100px;
-    padding: 30px;
-    padding-top: 80px;
+    /* padding: 30px; */
+    /* padding-top: 20px; */
 }
 .call-1{
     font-size: 20px;
@@ -190,11 +226,14 @@ ul li a:hover {
 .service-1{
     display: inline-block;
     position: relative;
-    width: 80%;
-    height: 60%;
+    width: 90%;
+    height: 100%;
     /* padding: 20%; */
     margin-top: 100px;
     margin-left: 20px;
+    background-color: #f1f1f1;
+    padding: 40px;
+    
 }
 .services-img-1{
     display: flex;
@@ -226,7 +265,7 @@ ul li a:hover {
     justify-content: center;
     width: 250px;
     height: 200px;
-    /*border: 1px solid red;*/
+    /* border: 1px solid red; */
     border-radius: 20px;
 }
 .service-box-2{
@@ -238,7 +277,7 @@ ul li a:hover {
 }
 .service-box-3{
     position: relative;
-    width: 200px;
+    width: 250px;
     height: 200px;
     /*border: 1px solid red;*/
     border-radius: 20px;
@@ -264,10 +303,10 @@ ul li a:hover {
 .service-boxs-3{
     background-image: url(/Images/led1.png); background-size: cover;
     position: absolute;
-    left: 25px;
-    bottom:20px;
-    width: 180px;
-    height: 180px;
+    left: 40px;
+    bottom:50px;
+    width: 140px;
+    height: 140px;
     /*border: 1px solid rgb(9, 255, 0);*/
 }
 
@@ -559,7 +598,7 @@ ul li a:hover {
 .lists-1{
     position: relative;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: wrap;
     top: 180px;
     left: 100px;

@@ -59,7 +59,41 @@ nav {
 }
 
 /* Navigation Menu */
-.ul1{
+nav {
+
+    display: flex;
+    position: fixed;
+    background-color: rgb(44, 42, 42);
+    padding: 25px 30px;
+    flex-wrap: wrap;
+    z-index: 9;
+    width: 100%;
+    top: 40px;
+    /* justify-content: space-between;/ / Added to space out the logo and menu */
+    align-items: center;
+
+}
+
+.head-logo1 {
+    color: aliceblue;
+    /* display: block; */
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 80px;
+
+}
+
+.head-logo {
+    display: inline;
+    background-color: rgb(4, 236, 109);
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 5px;
+
+}
+
+/* Navigation Menu */
+.ul1 {
     margin-left: 150px;
 }
 
@@ -70,9 +104,10 @@ ul {
     text-decoration: none;
     list-style-type: none;
     justify-content: space-between;
-    
+
 
 }
+
 /* ul {
     list-style: none;
     margin: 0;
@@ -125,6 +160,8 @@ ul li a:hover {
     z-index: 1;
     padding: 10px 0;
     margin-right: 4000px;
+    margin-top: 5px;
+
 }
 
 .dropdown-content li {
@@ -141,6 +178,39 @@ ul li a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* boobkabvhbvbb */
+.dropdown-content-1 {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 220px;
+    text-align: start;
+    z-index: 1;
+    padding: 10px 0;
+    margin-right: 4000px;
+    left: 221px;
+    top: 79px;
+    /* overflow:scroll; */
+    overflow-y: scroll;
+    height: 400px;
+
+}
+
+.dropdown-content-1 li {
+    padding: 25px 16px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.dropdown-content-1 li:hover {
+    background-color: #444;
+}
+
+/* Show the dropdown when the button is clicked */
+.dropdown-menu-1:hover .dropdown-content-1 {
+    display: block;
+}
 /* .cover-1{
     position: absolute;
     width: 100%;
@@ -154,7 +224,7 @@ ul li a:hover {
     display: flex;
     position: relative;
     justify-content: space-around;
-    border: 2px solid #ca0b0b;
+    /* border: 2px solid #ca0b0b; */
     color: #101010;
     padding-top: 70px;
     padding-bottom: 40px;
