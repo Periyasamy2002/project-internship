@@ -272,13 +272,6 @@ ul li a:hover {
     justify-content: center;
     padding-top: 60px;
 }
-.section-31{
-    left: 200px;
-    /* border: 2px solid red; */
-    align-items: center;
-    padding-left: 170px;
-
-}
 
 .section-3 .card {
     color: #3c5665;
@@ -310,7 +303,7 @@ ul li a:hover {
     display: flex;
     justify-content: space-around;
     font-size: 18px;
-    /* padding-bottom: 70px; */
+    padding-bottom: 70px;
 }
 
 /*section-5*/
@@ -326,16 +319,10 @@ ul li a:hover {
     font-size: 50px;
     margin-top: -15px;
 }
-.section-5-1{
-    display: inline-flex;
-    width: 100%;
-    flex-wrap: wrap;
-    /* border: 2px solid red; */
-}
 
 .section-5 p {
     color: #3c5665;
-    margin-left: 150px;
+    margin-left: 200px;
     display: inline-flex;
     font-size: 20px;
     height: 150px;
