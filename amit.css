@@ -397,7 +397,10 @@ ul li a:hover {
 
 }
 .loptop-ser h1{
-    padding: 20px;
+    /* padding: 20px; */
+    position: absolute;
+    left: 40%;
+    border-bottom:3px solid green ;
 }
 .img-lap-1{
     position: relative;
