@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
+
+body {
     display: block;
     position: relative;
     justify-content: center;
@@ -13,6 +14,7 @@ body{
     width: 100%;
 
 }
+
 .head-name {
     display: block;
     position: fixed;
@@ -37,18 +39,14 @@ nav {
     z-index: 9;
     width: 100%;
     top: 40px;
-    /* justify-content: space-between;/ / Added to space out the logo and menu */
     align-items: center;
-
 }
 
 .head-logo1 {
     color: aliceblue;
-    /* display: block; */
     font-size: 26px;
     font-weight: bold;
     margin-left: 80px;
-
 }
 
 .head-logo {
@@ -72,22 +70,14 @@ ul {
     text-decoration: none;
     list-style-type: none;
     justify-content: space-between;
-
-
 }
 
-/* ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-} */
 
 li {
     left: 20px;
     padding-left: 30px;
-
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .head-logoc {
@@ -128,7 +118,6 @@ ul li a:hover {
     z-index: 1;
     padding: 10px 0;
     margin-right: 4000px;
-    /* margin-top: 5px; */
 
 }
 
@@ -147,11 +136,22 @@ ul li a:hover {
     display: block;
 }
 
+.arrow {
+    font-size: 12px;
+    color: #fdfbfb;
+}
+
+.arrow:hover {
+    transform: rotate(180deg);
+}
+
 /* boobkabvhbvbb */
 .dropdown-content-1 {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #46705a;
+    color: #000;
+    border-radius: 10px;
     min-width: 220px;
     text-align: start;
     z-index: 1;
@@ -159,15 +159,14 @@ ul li a:hover {
     margin-right: 4000px;
     left: 221px;
     top: 79px;
-    /* overflow:scroll; */
     overflow-y: scroll;
-    height: 400px;
+    height: 300px;
 
 }
 
 .dropdown-content-1 li {
     padding: 25px 16px;
-    color: #fff;
+    color: #0e0d0d;
     font-size: 16px;
 }
 
@@ -179,156 +178,185 @@ ul li a:hover {
 .dropdown-menu-1:hover .dropdown-content-1 {
     display: block;
 }
+
+.phpne_call,
+.whatsapp {
+    position: fixed;
+    background-color: #2db742;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    bottom: 5%;
+    right: 30px;
+    z-index: 100;
+}
+
+.phpne_call:hover,
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
 /* display */
-.dis{
+.con-black {
+    background-color: #0c0c0c;
+    display: block;
+    position: absolute;
+    background-color: #0c0c0c;
+    top: 30px;
+    height: 600px;
+    width: 50%;
+    left: 30px;
+    z-index: -10;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    overflow: hidden;
+    opacity: 0.4;
+}
+
+
+.back_video {
+    display: inline-flex;
+    position: absolute;
+    background-color: #0c0c0c;
+    top: 30px;
+    height: 600px;
+    width: 100%;
+    z-index: -12;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* opacity: 0.5; */
+}
+
+.dis {
     display: flex;
     position: relative;
     justify-content: space-around;
     width: 100%;
-    /* background-color: chartreuse;#f98686 ,-90deg,*/
-    background: linear-gradient(-90deg, #fff 45%, #49f69c 35% );
-    color: #fff;
-    height: 580px;
+    /* background-color: transparent; */
+
+    color: #d33e3e;
+    height: 650px;
     top: 90px;
+
 }
-.text-content{
+
+.text-content {
     display: block;
     position: absolute;
+    /* background-color: green; */
+    color: #04EC6D;
     /* border:1px solid; */
+    /* text-shadow: 4px 1px rgb(253, 251, 251); */
     font-size: 20px;
     width: 600px;
     height: 500px;
-    top: 200px;
+    top: 100px;
     left: 100px;
-    /* padding: 30px; */
-    /* padding-top: 20px; */
+    padding: 30px;
+    padding-top: 80px;
+    z-index: 2;
+    text-shadow:0 2px #fff;
 }
-.call-1{
+
+.call-1 {
     font-size: 20px;
     padding: 15px 20px;
     border: 1px solid #fff;
-    background-color: #0c0c0c;
-    color: #49f69c;
+    background-color: rgb(4, 236, 109);
+    color: black;
     border-radius: 30px;
     margin-top: 20px;
+    z-index: 20;
 }
-.video-1{
-        /* border: 1px solid blue; */
-        position: absolute;
-        top: 30px;
-        width: 400px;
-        height: 450px;
-        /* background-color: aqua; */
-        background-image: url();
-        right: 100px;
-}
-/* service-1 */
-.service-1{
-    display: inline-block;
-    position: relative;
-    width: 90%;
-    height: 100%;
-    /* padding: 20%; */
-    margin-top: 100px;
-    margin-left: 20px;
-    background-color: #f1f1f1;
-    padding: 40px;
-    
-}
-.services-img-1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: auto;
-    margin-left:10% ;
-}
-.service-1 h1{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    padding: 20px;
-    color: rgb(12, 219, 132);
-}
-.service-1 p{
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    padding: 20px;
-    padding-top: 0;
-    color: rgb(5, 9, 0);
 
+.video-1 {
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 30px;
+    width: 400px;
+    height: 450px;
+    /* background-color: aqua; */
+    background-image: url();
+    right: 100px;
 }
-.service-box-1{
-    position: relative;
+
+
+/* Container for the services section */
+.service-1 {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Heading styles */
+.service-1 h1 {
+    font-size: 36px;
+    color: #04EC6D;
+    margin-bottom: 10px;
+}
+
+.service-1 p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Services container (holding the individual boxes) */
+.services-img-1 {
     display: flex;
     justify-content: center;
-    width: 250px;
-    height: 200px;
-    /* border: 1px solid red; */
-    border-radius: 20px;
-}
-.service-box-2{
-    position: relative;
-    width: 250px;
-    height: 200px;
-    /*border: 1px solid red;*/
-    border-radius: 20px;
-}
-.service-box-3{
-    position: relative;
-    width: 250px;
-    height: 200px;
-    /*border: 1px solid red;*/
-    border-radius: 20px;
-}
-.service-boxs-1{
-    background-image: url(/Images/laptop.png); background-size: cover;
-    position: absolute;
-    left: 25px;
-    bottom: 20px;
-    width: 170px;
-    height: 170px;
-    /* border: 1px solid rgb(9, 255, 0); */
-}
-.service-boxs-2{
-    background-image: url(/Images/desktop.png); background-size: cover;
-    position: absolute;
-    left: 25px;
-    bottom: 20px;
-    width: 200px;
-    height: 200px;
-    /*border: 1px solid rgb(9, 255, 0);*/
-}
-.service-boxs-3{
-    background-image: url(/Images/led1.png); background-size: cover;
-    position: absolute;
-    left: 40px;
-    bottom:50px;
-    width: 140px;
-    height: 140px;
-    /*border: 1px solid rgb(9, 255, 0);*/
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.service-box-1 h2{
-    position: absolute;
+/* Individual service box styles */
+.service-box-1 {
+    background-color: #fff;
+    width: 300px;
+    height: 280px;
+    /* Ensures the box has a defined height */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    bottom: 0px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.service-box-2 h2{
-    position: absolute;
-    text-align: center;
-    left: 5px;
-    bottom: 0px;
+
+.service-box-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
-.service-box-3 h2{
-    position: absolute;
-    text-align: center;
-    left: 5px;
-    bottom: 0px;
+
+/* Styling for icons inside service boxes */
+.service-boxs-1,
+.service-boxs-2,
+.service-boxs-3 {
+    width: 100%;
+    height: 150px;
+    /* Adjust based on your image aspect ratio */
+    background-size: cover;
+    /* Makes the background image cover the div */
+    background-position: center;
+    /* Centers the background image */
+    margin-bottom: 20px;
 }
+
+/* Service name styles */
+.service-box-1 h2 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 /* our */
-.our{
+.our {
     display: inline-block;
     position: relative;
     width: 100%;
@@ -337,22 +365,25 @@ ul li a:hover {
     margin-top: 100px;
     background-color: rgb(0, 15, 15);
 }
-.our h1{
+
+.our h1 {
     color: #fff;
     position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     font-size: 45px;
 }
-.card-box{
+
+.card-box {
     display: inline-flex;
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 15px;
 
 }
-.our-box-1{
+
+.our-box-1 {
     position: relative;
     display: block;
     background-color: rgb(21, 42, 40);
@@ -360,153 +391,218 @@ ul li a:hover {
     width: 550px;
     height: 250px;
     text-align: start;
-    margin: 20PX;
+    margin-top: 5px;
     border-radius: 20px;
 }
-.our-box-1 i{margin-left: 50px; margin-top: 30px;  color: rgb(21, 218, 119) ; font-size: 80px;}
-.our-box-1 h2{
+
+.our-box-1 i {
+    margin-left: 50px;
+    margin-top: 30px;
+    color: rgb(21, 218, 119);
+    font-size: 80px;
+}
+
+.our-box-1 h2 {
     position: absolute;
     color: rgb(21, 218, 119);
     bottom: 60px;
     padding: 10px;
 }
-.our-box-1 p{
+
+.our-box-1 p {
     position: absolute;
     color: #fff;
     bottom: 0px;
     padding: 10px;
-    
+
 }
 
 /* laptops ser */
-
-.loptop-ser{
-    display: inline-block;
-    position: relative;
-    width: 97%;
-    height: 60%;
-    /* padding: 20%; */
-    margin-top: 30px;
-
+/* General styling for the sections */
+.loptop-ser,
+.laptop-bra {
+    text-align: center;
+    padding: 5px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
-.card-box{
-    display: inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
 
-}
-.loptop-ser h1{
-    /* padding: 20px; */
+.loptop-ser h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    /* margin-bottom: 60px; */
+    content: "";
     position: absolute;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #04EC6D;
     left: 40%;
-    border-bottom:3px solid green ;
-}
-.img-lap-1{
-    position: relative;
-    display: block;
-    /*background-color: rgb(195, 198, 200);*/
-    /*border: 1px solid rgb(247, 249, 251);*/
-    width: 200px;
-    height: 250px;
-    text-align: start;
-    margin: 60px;
-    border-radius: 20px;
-}
-.img-lap{
-    position: absolute;
-    /*border: 1px solid rgb(237, 237, 9);*/
-    border-radius: 100%;
-    width: 180px;
-    height: 180px;
-    left: 10px;
-    top: 20px;
-}
 
-.img-lap-1 p{
-    color: #0d0d0d;
-    margin-top: 200px;
-    position:relative;
+}
+/* Card box container */
+.card-box {
     display: flex;
-    align-content: center; justify-content: center;
-    bottom: 0px;
-    padding: 10px;
-    
-}
-/* laptop bra */
-.laptop-bra{
-    display: inline-block;
-    position: relative;
-    width: 97%;
-    /* padding: 20%; */
-    margin-top: 100px;
-}
-.laptop-bra h1{
-    position: absolute;
-    margin-left: 100px;
-    border-bottom:3px solid green ;
-}
-.brand{
-    display: inline-flex;
-    width: 65%;
     justify-content: space-around;
+    gap: 50px;
     flex-wrap: wrap;
-    position: relative;
+    margin-top: 40px;
+    padding-top: 40px;
 }
-.img-box{
-    position: relative;
-    display: block;
-    width: 200px;
-    height: 150px;
-    text-align: start;
-    /* margin: 10PX; */
-    border-radius: 20px;
-    margin-top: 60PX;
-}
-.img-lap-2{
-    position: absolute;
-    /*border: 1px solid yellow;*/
-    border-radius: 100%;
-    width: 180px;
-    height: 180px;
-    left: 10px;
-    top: 20px;
-}
-/* Tv service */
 
-.Led-tv{
-    display: inline-block;
-    position: relative;
-    width: 97%;
-    height: 60%;
-    /* padding: 20%; */
-    margin-top: 100px;
-
-}
-.card-box1{
-    display: inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
-
-}
-.Led-tv h1{
+/* Individual card styles */
+.img-lap-1 {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
     padding: 20px;
-}
-.img-tv-1{
+    top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-lap-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.img-lap {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 25px;
+}
+
+.img-lap-1 p {
+    position: relative;
+    font-size: 18px;
+    color: #333;
+    margin-top: 190px;
+    font-weight: bold;
+}
+
+/* Container for the laptop brands section */
+.laptop-bra {
+    text-align: center;
+    margin: 40px;
+    padding-top: 30px;
+    background-color: white;
+    border: 2px solid #ddd;
+    /* Border around the images */
+}
+
+/* Header style */
+.laptop-bra h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    content: "";
+    position: absolute;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #04EC6D;
+    left: 15%;
+
+
+}
+
+/* Container for the images */
+.brand {
     display: flex;
     justify-content: center;
-    color: #000f07;
-    /*background-color: #f80673;*/
-    /*border: 1px solid rgb(145, 156, 132);*/
-    width: 200px;
-    height: 250px;
-    text-align: center;
-    margin: 20PX;
-    border-radius: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    gap: 20px;
+    /* Space between the images */
+    width: 70%;
+    padding: 20px;
+    margin-left: 16%;
+    margin-top: 5%;
+    border-radius: 10px;
+    /* Optional: Rounded corners for the border */
+
 }
-.img-lap{
+
+/* Style for each individual image */
+.img-lap-2 {
+    width: 150px;
+    /* Set width for consistency */
+    height: auto;
+    /* Maintain aspect ratio */
+    /* border: 2px solid #ccc; Optional: Border around each image */
+    padding: 10px;
+    /* Padding inside each image */
+    border-radius: 50%;
+    /* Optional: Rounded corners for images */
+    transition: transform 0.3s ease;
+    /* Smooth scaling effect on hover */
+}
+
+/* Hover effect for images */
+.img-lap-2:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the image on hover */
+}
+
+/* Tv service */
+
+.Led-tv {
+    text-align: center;
+    padding: 5px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+}
+
+.card-box1 {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.Led-tv h1 {
+    padding-top: 20px;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    content: "";
+    position: absolute;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #04EC6D;
+    left: 40%;
+}
+
+
+.Led-tv h1::after {
+    content: "";
+    position: absolute;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #04EC6D;
+    left: 40%;
+}
+
+.img-tv-1 {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-lap {
     position: absolute;
     /*border: 1px solid yellow;*/
     border-radius: 100%;
@@ -516,55 +612,32 @@ ul li a:hover {
     top: 20px;
 }
 
-.img-tv-1 p{
-    position: absolute;
-    /* left: 40px; */
-    bottom: 0px;
-    padding: 10px;
-    
-}
-/* tv bra */
-.tv-bra{
-    display: inline-block;
+.img-tv-1 p {
     position: relative;
-    width: 97%;
-    /* padding: 20%; */
-    margin-top: 100px;
+    font-size: 18px;
+    color: #333;
+    margin-top: 190px;
+    font-weight: bold;
+
 }
-.tv-bra h1{
+
+.img-tv-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* tv bra */
+
+.tv-bra h1 {
     position: absolute;
     margin-left: 100px;
-    border-bottom:3px solid green ;
+    border-bottom: 3px solid green;
 }
-.brand{
-    display: inline-flex;
-    width: 65%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
-}
-.img-box{
-    position: relative;
-    display: block;
-    width: 200px;
-    height: 150px;
-    text-align: start;
-    /* margin: 10PX; */
-    border-radius: 20px;
-    margin-top: 60PX;
-}
-.img-lap-2{
-    position: absolute;
-   /* border: 1px solid yellow;*/
-    border-radius: 100%;
-    width: 180px;
-    height: 180px;
-    left: 10px;
-    top: 20px;
-}
+
+
 /* bus */
-.businesses{
-    display:inline-block;
+.businesses {
+    display: inline-block;
     position: relative;
     width: 97%;
     /* padding: 20%; */
@@ -573,14 +646,16 @@ ul li a:hover {
     /*background-color: aqua;*/
 
 }
-.content{
+
+.content {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
     position: relative;
 
 }
-.content-box1{
+
+.content-box1 {
     position: relative;
     width: 40%;
     height: 500px;
@@ -590,7 +665,8 @@ ul li a:hover {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.content-box1 h1{
+
+.content-box1 h1 {
     font-size: 34px;
     color: #fff;
     position: absolute;
@@ -598,10 +674,11 @@ ul li a:hover {
     padding-top: 60px;
 
 }
-.lists-1{
+
+.lists-1 {
     position: relative;
     display: flex;
-    /* justify-content: center; */
+    justify-content: start;
     flex-wrap: wrap;
     top: 180px;
     left: 100px;
@@ -609,18 +686,23 @@ ul li a:hover {
     width: 300px;
     height: 100px;
     text-align: center;
-    
+
 
 }
-.list-box{
+
+.list-box {
     position: absolute;
     width: 100px;
     height: 100px;
     background-color: aqua;
     left: 0;
 }
-.lists-1 i{color: #0e0e0e;}
-.lists-1 h2{
+
+.lists-1 i {
+    color: #0e0e0e;
+}
+
+.lists-1 h2 {
     color: #fff;
     position: absolute;
     margin-left: 50px;
@@ -629,34 +711,97 @@ ul li a:hover {
 }
 
 
-.content-box2{
+.content-box2 {
     position: relative;
-    width: 40%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 50%;
     height: 500px;
-    background-color: #49f69c;
+    background-color: transparent;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.content-video-20{
+    display: inline-flex;
+    position: absolute;
+    background-color: #0c0c0c;
+    height: 600px;
+    width: 100%;
+    z-index: -12;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    
+    /* opacity: 0.5; */
 }
 
 
 
-footer {display: flex; justify-content: space-around; background-color: rgb(21, 42, 40); padding-bottom: 10px; color: aliceblue;}
-footer h1 { display: flex; color: rgb(12, 219, 132); font-size: 40px; padding-top: 30px;}
 
-.head{margin-top: 100px;}
-.head span {color: #fff;}
-.f1 span {color:aqua}
-.f1 p{margin-left: 10px; transition: 0.3s; cursor: pointer;}
-.f1 p:hover {color: aqua;}
-.f2 p{transition: 0.3s; cursor: pointer;}
-.f2 p:hover{color: aqua;}
-.f3 p{margin-left: 10px; transition: 0.3s;  cursor: pointer;}
-.f3 p:hover {cursor: pointer; color:aqua; }
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(21, 42, 40);
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+
+footer h1 {
+    display: flex;
+    color: rgb(12, 219, 132);
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.head {
+    margin-top: 100px;
+}
+
+.head span {
+    color: #fff;
+}
+
+.f1 span {
+    color: aqua
+}
+
+.f1 p {
+    margin-left: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.f1 p:hover {
+    color: aqua;
+}
+
+.f2 p {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.f2 p:hover {
+    color: aqua;
+}
+
+.f3 p {
+    margin-left: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.f3 p:hover {
+    cursor: pointer;
+    color: aqua;
+}
 
 
-.box2{
-    display:flex;
+.box2 {
+    display: flex;
     background-color: rgb(148, 148, 148);
     color: #fff;
     position: absolute;
@@ -666,7 +811,8 @@ footer h1 { display: flex; color: rgb(12, 219, 132); font-size: 40px; padding-to
     align-items: center;
     padding-bottom: 5px;
 }
-.SAR{
+
+.SAR {
     position: absolute;
     right: 200px;
     font-weight: 600;
@@ -675,7 +821,8 @@ footer h1 { display: flex; color: rgb(12, 219, 132); font-size: 40px; padding-to
     width: 10%;
     margin-bottom: 10px;
 }
-.SAR i{
+
+.SAR i {
     position: absolute;
     background-color: #fff;
     color: #0e0e0e;
@@ -686,5 +833,33 @@ footer h1 { display: flex; color: rgb(12, 219, 132); font-size: 40px; padding-to
     margin-right: 100px;
     margin-bottom: 40px;
 }
-.SAR i:hover{color: #fff;
-    background-color: rgb(54, 242, 142);}
+
+.SAR i:hover {
+    color: #fff;
+    background-color: rgb(54, 242, 142);
+}
+
+ /*copyrights*/
+    
+ 
+ .end .link-1 {
+    font-size: 18px;
+}
+
+.end .link-2 a {
+    color: #0e0d0d;
+    margin-left: 30px;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    background-color: #fef6f6;
+    border-radius: 20% 20%;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.end .link-2 a:hover {
+    background-color: #26cb81;
+    color: #fff;
+}
