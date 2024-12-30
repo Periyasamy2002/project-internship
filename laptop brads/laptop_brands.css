@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +27,6 @@ body {
     font-size: medium;
     padding-top: 10px;
     z-index: 10;
-    margin: 0;
 }
 
 nav {
@@ -65,7 +63,7 @@ nav {
     margin-left: 150px;
 }
 
-nav ul {
+ul {
     display: flex;
     text-align: center;
     align-items: center;
@@ -138,12 +136,12 @@ ul li a:hover {
     display: block;
 }
 
-.arow {
+.arrow {
     font-size: 12px;
-    color: #e7e2e2;
+    color: #fdfbfb;
 }
 
-.arow:hover {
+.arrow:hover {
     transform: rotate(180deg);
 }
 
@@ -180,7 +178,7 @@ ul li a:hover {
 .dropdown-menu-1:hover .dropdown-content-1 {
     display: block;
 }
-/*  */
+
 .phpne_call,
 .whatsapp {
     position: fixed;
@@ -200,7 +198,6 @@ ul li a:hover {
     transform: scale(1.1);
 }
 
-/* section-1 */
 h1,
 h2,
 h3 {
@@ -334,13 +331,12 @@ button:hover {
 
 .card {
 
-    
+    background-color: #fff;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     width: 330px;
     text-align: center;
-    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -404,140 +400,90 @@ button:hover {
 }
 
 /* Section 7: Locations and Services */
-section-7a {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    /* Optional background */
-}
 
 .seaction-7 {
-    width: 80%;
+    /* width: 80%; */
     /* Set a width or adjust as needed */
     max-width: 1200px;
     /* Optional: limit maximum width */
     text-align: center;
-    margin-left: 150px;
+    margin-left: 65px;
 }
 
-.para {
+.seaction-7 .para {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.content-1 {
+.seaction-7 .content-1 {
     margin: 20px 0;
     /* Add some spacing between content blocks */
 }
 
-h1,
-h2,
-p {
-    margin: 10px 0;
-}
+.seaction-7 h1
+{
+    margin: 30px 0;
+} 
+.seaction-7 h2
+{
+    margin: 20px 0;
+} 
+/* .seaction-7 p
+{
+    margin: px 0;
+}  */
 
 /* Optional: Styling for links */
-a {
+.seaction-7 a {
     color: #007bff;
     /* Adjust link color */
     text-decoration: none;
 }
 
-a:hover {
+.seaction-7 a:hover {
     text-decoration: underline;
 }
 
 /* Section 8: FAQ */
 /* FAQ Section */
-    /* Container for the FAQ section */
-    .section-8 {
-        width: 80%;
-        margin: 20px auto;
-        font-family: Arial, sans-serif;
-    }
-    
-    /* Main heading for FAQ */
-    .faq-question {
-        font-size: 24px;
-        font-weight: bold;
-        margin: 10px 0;
-        cursor: pointer;
-        position: relative;
-    }
-    
-    /* Arrow indicator for collapsible content */
-    .arrow {
-        font-size: 18px;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: transform 0.3s ease;
-    }
-    
-    /* Styling for the FAQ answers */
-    .faq-answer {
-        display: none; /* Hide the answer initially */
-        padding: 10px;
-        background-color: #f9f9f9;
-        margin-bottom: 10px;
-        border-left: 4px solid #4CAF50;
-    }
-    
-    /* When the question is clicked, the arrow rotates */
-    .faq-question.active .arrow {
-        transform: translateY(-50%) rotate(180deg); /* Rotate the arrow when expanded */
-    }
-    
-    /* Make the FAQ answers visible when active */
-    .faq-question.active + .faq-answer {
-        display: block;
-    }
-    
-    /* Style for the whole FAQ section */
-    .content-6pa {
-        margin-top: 20px;
-    }
-    
-    /* Style the question/answer to make the FAQ section more readable */
-    .faq-question {
-        font-size: 18px;
-        padding: 12px;
-        background-color: #f0f0f0;
-        margin: 8px 0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        text-align: start;
-    }
-    
-    .faq-question:hover {
-        background-color: #e7e7e7;
-    }
-    
-    /* Style for the FAQ answer */
-    .faq-answer {
-        font-size: 16px;
-        margin-left: 20px;
-        padding: 10px;
-        background-color: #fafafa;
-        border-left: 3px solid #4CAF50;
-        display: none; /* Hidden by default */
-        transition: max-height 0.3s ease-in-out;
-        overflow: hidden;
-    }
-    
-    .faq-answer p {
-        margin: 0;
-    }
-    
+.section-8 {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.section-8 h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-question {
+    font-size: 1.5em;
+    color: #2c3e50;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.faq-answer {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+    display: none;
+    /* Initially hide the answers */
+}
+
+.faq-question:hover {
+    color: #4CAF50;
+}
+
+.faq-question+.faq-answer {
+    padding-left: 20px;
+    border-left: 2px solid #4CAF50;
+}
 
 /* Section 9: Service Locations */
 .seaction-9 {
@@ -574,7 +520,6 @@ a:hover {
 }
 
 .content-ls-3 li {
-    list-style: none;
     font-size: 16px;
     margin-bottom: 10px;
     color: #666;
@@ -586,23 +531,19 @@ a:hover {
     color: #45a049;
 
 }
-/*footer*/
- footer {
+footer {
     display: flex;
-    position:  relative;
     justify-content: space-around;
     background-color: rgb(21, 42, 40);
     padding-bottom: 10px;
     color: aliceblue;
-   
-    
 }
 
 footer h1 {
     display: flex;
     color: rgb(12, 219, 132);
     font-size: 40px;
-    /* padding-top: 30px; */
+    padding-top: 30px;
 }
 
 .head {
@@ -618,50 +559,38 @@ footer h1 {
 }
 
 .f1 p {
-    margin-left: 70px;
-    
-    font-size: 18px;
+    margin-left: 10px;
     transition: 0.3s;
     cursor: pointer;
-    padding: 0%;
-    margin-top: 0%;
 }
 
 .f1 p:hover {
-    font-size: 19px;
     color: aqua;
 }
 
 .f2 p {
-    font-size: 18px;
     transition: 0.3s;
     cursor: pointer;
-    padding: 0%;
-    margin-top: 0%;
 }
 
 .f2 p:hover {
-    font-size: 19px;
     color: aqua;
 }
 
 .f3 p {
-    padding-left: 80px;
-    font-size: 18px;
     margin-left: 10px;
     transition: 0.3s;
     cursor: pointer;
-    padding: 0%;
-    margin-top: 0%;
 }
 
 .f3 p:hover {
-    font-size: 20px;
     cursor: pointer;
     color: aqua;
-} 
-.box2{
-    display:flex;
+}
+
+
+.box2 {
+    display: flex;
     background-color: rgb(148, 148, 148);
     color: #fff;
     position: absolute;
@@ -672,12 +601,38 @@ footer h1 {
     padding-bottom: 5px;
 }
 
-/*copyrights*/
-   
+.SAR {
+    position: absolute;
+    right: 200px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    margin-bottom: 10px;
+}
 
-.end .link-1 {
+.SAR i {
+    position: absolute;
+    background-color: #fff;
+    color: #0e0e0e;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    background-size: 2%;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+.SAR i:hover {
+    color: #fff;
+    background-color: rgb(54, 242, 142);
+}
+
+ /*copyrights*/
+    
+ 
+ .end .link-1 {
     font-size: 18px;
-
 }
 
 .end .link-2 a {

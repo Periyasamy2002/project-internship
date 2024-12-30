@@ -63,7 +63,7 @@ nav {
     margin-left: 150px;
 }
 
-ul {
+nav ul {
     display: flex;
     text-align: center;
     align-items: center;
@@ -73,7 +73,7 @@ ul {
 }
 
 
-li {
+nav li {
     left: 20px;
     padding-left: 30px;
     display: flex;
